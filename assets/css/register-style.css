@@ -1,6 +1,18 @@
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+.outfit-font {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 :root{
     --fonts : #e6e5e5;
     --primary: #5E4BA6;
@@ -18,13 +30,6 @@
     border: 1px solid var(--primary);
     border-radius: 1px;
     background-color: var(--fonts);
-}
-
-.outfit-font {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
 }
 
 body{
@@ -47,6 +52,21 @@ h1{
     color: var(--fonts);
 }
 
+.inpbox{
+    margin: 20px 10px;
+    width: 95%;
+    text-align: initial;
+    justify-content: center;
+}
+
+
+label{
+    padding: 0px;
+    margin: 10px;
+    color: var(--fonts);
+    font-size: 16px;
+}
+
 .input{
     margin: 1px;
     padding: 5px;
@@ -56,33 +76,6 @@ h1{
     border-radius: 5px;
     color: var(--fonts);
     font-size: 14px;
-}
-
-
-.btn{
-    cursor: pointer;
-    margin: 10px;
-    padding: 7px;
-    width: 95%;
-    background-color: var(--primary);
-    border: none;
-    border-radius: 5px;
-    color: var(--fonts);
-    font-size: 16px;
-}
-
-.inpbox{
-    margin: 20px 10px;
-    width: 95%;
-    text-align: initial;
-    justify-content: center;
-}
-
-label{
-    padding: 0px;
-    margin: 10px;
-    color: var(--fonts);
-    font-size: 16px;
 }
 
 .date{
@@ -106,26 +99,45 @@ label{
 }
 
 #input-day{
-    width: 60px;
+    width: 15%;
 }
 
 #input-mounth{
-    width: 150px;    
+    width: 50%;    
 }
 
 #input-year{
-    width: 80px;    
+    width:20%;    
 }
 
-p{
+
+.terms{
     padding: 0px 15px;
     color: var(--fonts);
     font-size: 14px;
     width: 94%;
 }
 
+.btn{
+    cursor: pointer;
+    margin: 10px;
+    padding: 7px;
+    width: 95%;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    color: var(--fonts);
+    font-size: 16px;
+}
+
 a{
     margin: 10px;
     color: var(--primary);
     text-decoration: none;
+}
+
+@media all and (max-width: 450px){ 
+    section{
+        width: 100%;
+    }
 }
