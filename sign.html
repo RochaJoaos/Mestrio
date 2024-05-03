@@ -9,13 +9,32 @@
 </head>
 <body>
     <section>
-        <h1>Crie sua conta</h1>
-        <input class="input" type="text" name="name" id="input-name" placeholder="nome">
-        <input class="input" type="text" name="nickname" id="input-user" placeholder="apelido">
-        <input class="input" type="email" name="email" id="input-email" placeholder="email">
-        <input class="input" type="password" name="password" id="input-password" placeholder="senha">
-        <input class="input" type="password" name="confirm-password" id="input-confirm" placeholder="confirmar senha">
+        <h1>Novo por aqui? Cadastre-se</h1>
+        <div class="inpbox">
+            <label for="name">Nome</label>
+            <input class="input" type="text" name="name" id="input-name">
+        </div>
+        <div class="inpbox">
+            <label for="name">Email</label>
+            <input class="input" type="email" name="email" id="input-email">
+        </div>
+        <div class="inpbox">
+            <label for="name">Senha</label>
+            <input class="input" type="password" name="password" id="input-password">
+        </div>
+        <div class="inpbox">
+            <label for="name">Dia do nascimento</label>
+            <div class="date">
+                <input class="input-date" placeholder="Dia" type="number" name="day" id="input-day">
+                <input class="input-date" placeholder="Mês" type="text" name="mounth" id="input-mounth">
+                <input class="input-date" placeholder="Ano" type="number" name="year" id="input-year">
+            </div>
+        </div>
+        <div class="ipnbox">
+            <p>Ao cadastrar-se você concorda com os<a href="">Termos de serviço</a> e estará ciente do <a href="">Aviso de privacidade</a> da comunidade.</p>
+        </div>
         <input type="button" value="Cadastrar" class="btn">
+        <a href="log.html" target="_blank" rel="noopener noreferrer">Já tenho conta</a>
     </section>
 </body>
 </html>
