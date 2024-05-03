@@ -1,0 +1,72 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --fonts : #e6e5e5;
+    --primary: #5E4BA6;
+    --second: #9c9c9c;
+    --dark-01: #1E1E1E;
+    --dark-02: #292929;
+    --dark-03: #3D3D3D;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border: 1px solid var(--primary);
+    border-radius: 1px;
+    background-color: var(--fonts);
+}
+
+.outfit-font {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    background-color: var(--dark-01);
+    margin: 0px;
+    padding: 40px;
+    font-family: "Outfit", sans-serif;
+}
+
+section{
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 450px;
+    background-color: var(--dark-02);
+    text-align: center;
+}
+
+h1{
+    font-size: 2em;
+    color: var(--fonts);
+}
+
+.input{
+    margin: 10px;
+    padding: 5px;
+    width: 75%;
+    background-color: var(--dark-02);
+    border: 1px solid var(--fonts);
+    border-radius: 10px;
+    color: var(--fonts);
+    font-size: 18px;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    width: 76%;
+    background-color: var(--found);
+    border: 1px solid var(--fonts);
+    border-radius: 10px;
+    color: var(--fonts);
+    font-size: 18px;
+}
