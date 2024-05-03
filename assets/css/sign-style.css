@@ -50,20 +50,24 @@ h1{
 
 .input{
     margin: 10px;
-    padding: 5px;
+    padding: 7px;
     width: 75%;
-    background-color: var(--dark-02);
-    border: 1px solid var(--fonts);
+    background-color: var(--dark-03);
+    border: none;
     border-radius: 10px;
     color: var(--fonts);
     font-size: 18px;
+}
+
+.input::placeholder{
+    color: var(--fonts);
 }
 
 .btn{
     cursor: pointer;
     margin: 10px;
     padding: 5px;
-    width: 76%;
+    width: 78%;
     background-color: var(--found);
     border: 1px solid var(--fonts);
     border-radius: 10px;
