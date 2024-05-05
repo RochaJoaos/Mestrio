@@ -3,5 +3,5 @@ function logIn(){
 }
 
 function signUp(){
-    window.open("sign.html");
+    window.open("register.html");
 }
