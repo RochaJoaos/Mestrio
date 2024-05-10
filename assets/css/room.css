@@ -11,6 +11,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: var(--fonts);
+    font-family: 'Outfit', sans-serif;
 }
 
 :root{
@@ -53,16 +55,29 @@ main{
 
 .container{
     background-color: var(--dark-02);
+    padding: 5px;
 }
 
 #left{
-    width: 26%;
+    width: 25%;
     border-radius: 10px 0px 0px 10px;
 }
 
 #right{
-    width: 26%;
+    width: 25%;
     border-radius: 0px 10px 10px 0px;
+}
+
+.opt-box{
+    text-align: center;
+}
+
+.opt-button{
+    cursor: pointer;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
 }
 
 .screen{
