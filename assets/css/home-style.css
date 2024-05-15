@@ -10,10 +10,10 @@
 
 ::-webkit-scrollbar{
     width: 10px;
+    background-color: var(--second);
 }
 
 ::-webkit-scrollbar-thumb{
-    border: 1px solid var(--primary);
     border-radius: 1px;
     background-color: var(--fonts);
 }
@@ -26,7 +26,7 @@
   }
 
 body{
-    background-color: var(--primary);
+    background-color: var(--fonts);
     margin: 0px;
     padding: 0px;
     font-family: "Outfit", sans-serif;
@@ -36,6 +36,7 @@ header{
     display: flex;
     align-items: center;
     color: var(--fonts);
+    background-color: var(--primary);
 
 }
 
@@ -75,6 +76,11 @@ section{
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
+}
+
+#welcome{
+    text-align: center;
+    background-color: var(--primary);
 }
 
 .log{
