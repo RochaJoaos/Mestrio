@@ -2,21 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root{
-    --fonts : #e6e5e5;
+    --fonts : #ffffff;
     --primary: #5E4BA6;
+    --alternative: #423259;
     --second: #9c9c9c;
     --found: #131313;
 }
 
 ::-webkit-scrollbar{
     width: 10px;
-    background-color: var(--second);
+    background-color: transparent
 }
 
 ::-webkit-scrollbar-thumb{
     border-radius: 1px;
-    background-color: var(--fonts);
+    background-color: var(--primary);
+    border: 1px solid var(--fonts);
+    border-radius: 20px;
 }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .outfit-font {
     font-family: "Outfit", sans-serif;
@@ -26,7 +36,9 @@
   }
 
 body{
-    background-color: var(--fonts);
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1180px;
     margin: 0px;
     padding: 0px;
     font-family: "Outfit", sans-serif;
@@ -36,8 +48,6 @@ header{
     display: flex;
     align-items: center;
     color: var(--fonts);
-    background-color: var(--primary);
-
 }
 
 .logo{
@@ -80,14 +90,21 @@ section{
 
 #welcome{
     text-align: center;
-    background-color: var(--primary);
+}
+
+.dice{
+    z-index: -1;
+    width: 38%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
 }
 
 .log{
     width: 200px;
     margin: 5px;
     padding: 10px;
-    background-color: var(--primary);
+    background-color: transparent;
     color: var(--fonts);
     border: 1px solid var(--fonts);
     border-radius: 10px;
