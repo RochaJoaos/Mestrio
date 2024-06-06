@@ -6,7 +6,9 @@
     --primary: #5E4BA6;
     --alternative: #423259;
     --second: #9c9c9c;
-    --dark-01: #131313;
+    --third: #F2CA50;
+    --dark-01: #1E1E1E;
+    --dark-02: #222222;
 }
 
 ::-webkit-scrollbar{
@@ -25,10 +27,68 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: var(--fonts);
 }
 
 body{
+    display: flex;
     width: 100%;
     height: 100%;
     background-color: var(--dark-01);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    padding: 0px;
+    border-radius: 5px;
+
+}
+
+.btn:hover{
+    box-shadow: -40px 0px 0px 0px var(--fonts);
+}
+
+img{
+    width: 30px;
+}
+
+.action-box{
+    display: flex;
+    height: 100vh;
+    flex-grow: 1;
+    background-color: var(--dark-02);
+}
+
+.screen-box{
+    width: 600px;
+    height: 100vh;
+}
+
+.your-options{
+    display: flex;
+    justify-content: end;
+}
+
+#account{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--third);
+}
+
+#screen{
+    margin: auto;
+    width: 580px;
+    height: 480px;
+    background-color: #ffffff;
 }
