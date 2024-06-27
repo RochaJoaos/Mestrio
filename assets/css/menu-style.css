@@ -1,0 +1,113 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --fonts : #ffffff;
+    --primary: #5E4BA6;
+    --alternative: #423259;
+    --second: #9c9c9c;
+    --third: #F2CA50;
+    --dark-01: #1E1E1E;
+    --dark-02: #222222;
+    --dark-03: #202020;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1px;
+    background-color: var(--primary);
+    border: 1px solid var(--fonts);
+    border-radius: 20px;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Outfit", sans-serif;
+    color: var(--fonts);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-01);
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: var(--fonts);
+    justify-content: space-between;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 8px 12px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.option:hover{
+    background-color: var(--dark-02);
+}
+
+main{
+    padding: 10px;
+}
+
+/* Amigos */
+#box-friends{
+    display: flex;
+    width: 100%;
+}
+
+.select-friend{
+    width: 30%;
+    height: 80vh;
+    padding: 10px;
+    background-color: var(--dark-03);
+    border-radius: 10px;
+}
+
+.chat-friend{
+    width: 60%;
+}
+
+.box-user{
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.box-user:hover{
+    background-color: var(--dark-02);
+}
+
+.photo-user{
+    width: 34px;
+    height: 34px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #F2CA50;
+}
+
+.name-user{
+    font-size: 18px;
+}

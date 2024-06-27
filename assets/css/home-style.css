@@ -16,8 +16,8 @@
 
 ::-webkit-scrollbar-thumb{
     border-radius: 1px;
-    background-color: var(--primary);
-    border: 1px solid var(--fonts);
+    background-color: var(--fonts);
+    border: 1px solid var(--found);
     border-radius: 20px;
 }
 
@@ -25,6 +25,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Outfit", sans-serif;
 }
 
 
@@ -36,26 +37,22 @@
   }
 
 body{
-    background-image: url(../img/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 1180px;
+    background-color: var(--found);
     margin: 0px;
     padding: 0px;
-    font-family: "Outfit", sans-serif;
 }
 
 header{
+    position: fixed;
     display: flex;
     align-items: center;
     color: var(--fonts);
 }
 
 .logo{
-    background-color: var(--fonts);
     margin: 15px 0px 15px 15px;
-    width: 70px;
-    height: 70px;
-    background-color: var(--fonts);
+    width: 50px;
+    height: 50px;
 }
 
 .menu{
@@ -74,15 +71,19 @@ h1{
     color: var(--fonts);
 }
 
+#title{
+    font-size: 2.4em;
+}
+
 section{
     width: 100%;
-    height: 83vh;
+    height: 100vh;
     position: relative;
 }
 
 .box{
     position: absolute;
-    top: 35%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
@@ -92,16 +93,8 @@ section{
     text-align: center;
 }
 
-.dice{
-    z-index: -1;
-    width: 38%;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-}
-
 .log{
-    width: 200px;
+    width: 160px;
     margin: 5px;
     padding: 10px;
     background-color: transparent;
@@ -109,14 +102,14 @@ section{
     border: 1px solid var(--fonts);
     border-radius: 10px;
     font-family: "Outfit", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 
 }
 
 .log:hover{
-    background-color: var(--fonts);
-    color: var(--primary);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 h1{
