@@ -8,7 +8,7 @@
     --second: #9c9c9c;
     --third: #F2CA50;
     --dark-01: #1E1E1E;
-    --dark-02: #222222;
+    --dark-02: #252525;
     --dark-03: #202020;
 }
 
@@ -61,7 +61,12 @@ header{
     cursor: pointer;
     border-radius: 6px;
 }
+
 .option:hover{
+    background-color: var(--dark-02);
+}
+
+#your-rooms{
     background-color: var(--dark-02);
 }
 
@@ -69,9 +74,58 @@ main{
     padding: 10px;
 }
 
+/* Suas Salas */
+#box-yourrooms{
+    display: flex;
+    width: 100%;    
+}
+
+.select-room{
+    width: 30%;
+    height: 80vh;
+    padding: 10px;
+    border-right: 1px solid var(--dark-02);
+}
+
+
+.box-room{
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-room:hover{
+    background-color: var(--dark-02);
+}
+
+.photo-room{
+    width: 34px;
+    height: 34px;
+    margin: 5px;
+    border-radius: 20%;
+    background-color: var(--primary);
+}
+
+.name-room{
+    font-size: 18px;
+}
+
+#img-more{
+    padding: 4px;
+    border-radius: 20%;
+    position: absolute;
+    top: 50%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+}
+
 /* Amigos */
 #box-friends{
-    display: flex;
+    display: none;
     width: 100%;
 }
 
@@ -79,8 +133,7 @@ main{
     width: 30%;
     height: 80vh;
     padding: 10px;
-    background-color: var(--dark-03);
-    border-radius: 10px;
+    border-right: 1px solid var(--dark-02);
 }
 
 .chat-friend{
