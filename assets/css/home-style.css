@@ -116,3 +116,10 @@ h1{
     margin: 10px 0px;
     font-size: 3em;
 }
+
+.sprite{
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
